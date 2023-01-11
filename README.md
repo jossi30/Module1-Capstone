@@ -52,7 +52,7 @@ A website for a Seminar.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://)
+- [Live Demo Link](https://jossi30.github.io/Module1-Capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
