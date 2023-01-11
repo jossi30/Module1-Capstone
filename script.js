@@ -8,93 +8,72 @@ function closeNav() {
 }
 
 /* speakers section */
-const speaker1 = {
-  name: 'Florentino Perez',
-  img: ['img/perez.jpg'],
-  position: 'President of Real Madrid CF',
-  info: 'Florentino Pérez Rodríguez is a Spanish businessman, civil engineer, former politician, and the current president of Real Madrid as well as Chairman and CEO of Grupo ACS, a civil engineering company.',
-};
-const speaker2 = {
-  name: 'Mark Cuban',
-  img: ['img/cuban1.jpg'],
-  position: 'Majority owner of Dallas Mavericks',
-  info: 'Mark Cuban is an American billionaire entrepreneur, He is the owner of the Dallas Mavericks professional basketball team of the National Basketball Association (NBA) and the co-owner of 2929 Entertainment',
-};
-const speaker3 = {
-  name: 'Dana White',
-  img: ['img/Dana-White.png'],
-  position: 'President of Ultimate Fighting Championship',
-  info: 'Dana Frederick White Jr. is an American businessman who serves as president of the Ultimate Fighting Championship, a global mixed martial arts organization. ',
-};
-const speaker4 = {
-  name: 'Jerry Jones',
-  img: ['img/jones.jpg'],
-  position: 'Owner, President, and GM of the Dallas Cowboys',
-  info: 'Jerral Wayne Jones is an American businessman who has been the owner, president, and general manager of the Dallas Cowboys of the National Football League since February 1989.',
-};
-const speaker5 = {
-  name: 'Thomas Bach',
-  img: ['img/thomas-bach.jpg'],
-  position: 'President of the International Olympic Committee',
-  info: 'Thomas Bach OLY is a German lawyer, former Olympic foil fencer and Olympic gold medalist, serving as the ninth and current president of the International Olympic Committee since 10 September 2013.',
-};
-const speaker6 = {
-  name: 'Masai Ujiri',
-  img: ['img/Ujiri.jpg'],
-  position: 'President of the Toronto Raptors',
-  info: 'Masai Ujiri is a British-born, Nigerian-Canadian professional basketball executive and former player and is the president of basketball operations of the Toronto Raptors in the National Basketball Association.',
-};
+const speakers = [
+  {
+    id: 1,
+    name: 'Florentino Perez',
+    title: 'President of Real Madrid CF',
+    description: 'Florentino Pérez Rodríguez is a Spanish businessman, civil engineer, former politician, and the current president of Real Madrid as well as Chairman and CEO of Grupo ACS, a civil engineering company',
+    image: 'img/perez.jpg',
+  },
+  {
+    id: 2,
+    name: 'Mark Cuban',
+    title: 'Majority owner of Dallas Mavericks',
+    description: 'Mark Cuban is an American billionaire entrepreneur, He is the owner of the Dallas Mavericks professional basketball team of the National Basketball Association (NBA) and the co-owner of 2929 Entertainment',
+    image: 'img/cuban1.jpg',
+  },
+  {
+    id: 3,
+    name: 'Dana White',
+    title: 'President of Ultimate Fighting Championship',
+    description: 'Dana Frederick White Jr. is an American businessman who serves as president of the Ultimate Fighting Championship, a global mixed martial arts organization.',
+    image: 'img/Dana-White.png',
+  },
+  {
+    id: 4,
+    name: 'Jerry Jones',
+    title: 'Owner, President, and GM of the Dallas Cowboys',
+    description: 'Jerral Wayne Jones is an American businessman who has been the owner, president, and general manager of the Dallas Cowboys of the National Football League since February 1989.',
+    image: 'img/jones.jpg',
+  },
+  {
+    id: 5,
+    name: 'Masai Ujiri',
+    title: 'President of the International Olympic Committee',
+    description: 'Masai Ujiri is a British-born, Nigerian-Canadian professional basketball executive and former player and is the president of basketball operations of the Toronto Raptors in the National Basketball Association.',
+    image: 'img/Ujiri.jpg',
+  },
+  {
+    id: 6,
+    name: 'Thomas Bach',
+    title: 'President of the International Olympic Committee',
+    description: 'Thomas Bach OLY is a German lawyer, former Olympic foil fencer and Olympic gold medalist, serving as the ninth and current president of the International Olympic Committee since 10 September 2013.',
+    image: 'img/thomas-bach.jpg',
+  },
+];
 
-const array = [speaker1, speaker2, speaker3, speaker4, speaker5, speaker6];
+const speakerContainer = document.getElementById('speakers');
 
-const section = document.createElement('section');
-section.className = 'speakers';
+function createSpeakerHtml(speaker) {
+  const speakerItem = document.createElement('li');
+  speakerItem.classList.add('speaker-item');
 
-const h2 = document.createElement('h2');
-h2.textContent = 'Featured Speakers';
-section.appendChild(h2);
-
-const div = document.createElement('div');
-div.className = 'speaker-container';
-section.appendChild(div);
-
-for (let i = 0; i < array.length; i += 1) {
-  const divS = document.createElement('div');
-  divS.className = 'speakerP';
-  div.appendChild(divS);
-
-  const divIMG = document.createElement('div');
-  divIMG.className = 'img-speaker';
-  divS.appendChild(divIMG);
-
-  const img = document.createElement('img');
-  img.src = `${array[i].img}`;
-  divIMG.appendChild(img);
-
-  const divInfo = document.createElement('div');
-  divInfo.className = 'info-speaker';
-  divS.appendChild(divInfo);
-
-  const h2Info = document.createElement('h2');
-  h2Info.textContent = `${array[i].name}`;
-  divInfo.appendChild(h2Info);
-
-  const h3Info = document.createElement('h3');
-  h3Info.textContent = `${array[i].position}`;
-  divInfo.appendChild(h3Info);
-
-  const pInfo = document.createElement('p');
-  pInfo.textContent = `${array[i].info}`;
-  divInfo.appendChild(pInfo);
+  const html = `
+    <div class="image-wrapper">
+      <img class="speaker-img" src=${speaker.image} alt="Speaker">
+    </div>
+    <div class="speaker-info">
+      <h3 class="speaker-name">${speaker.name}</h3>
+      <span class="speaker-title">${speaker.title}</span>
+      <div class="speaker-divder"></div>
+      <p class="speaker-description">${speaker.description}</p>
+    </div>
+  `;
+  speakerItem.innerHTML = html;
+  speakerContainer.appendChild(speakerItem);
 }
 
-const list = document.querySelector('.speakers-section');
-
-window.addEventListener('load', () => {
-  if (typeof (list) !== 'undefined' && list != null) {
-    list.after(section);
-  }
-});
-
+speakers.forEach((speaker) => createSpeakerHtml(speaker));
 closeNav.addEventListener('click');
 openNav.addEventListener('click');
