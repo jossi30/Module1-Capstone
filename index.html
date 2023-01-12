@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WS Events</title>
+  </head>
+  <body>
+    <header>     
+        <div class="black-bar">
+          <img src="img/facebook-alt-svgrepo-com.svg" alt="facebook" />
+          <img src="img/twitter-svgrepo-com (1).svg" alt="twitter" />
+          <a href="#">English</a>
+          <a href="#">My Page</a>
+          <a href="#">Logout</a>
+        </div>
+        <div class="white-bar">
+          <a class="logo" href="index.html"><img src="img/pngwing.com.png" alt="logo"></a>
+          <ul class="contact-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="#program">Program</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#partners">Partners</a></li>
+              <li><a href="#">News</a></li>
+              <li><a class="red-box" href="#">WS Events</a></li>
+          </ul>
+          </div> 
+        <!--nav menu-->
+        <nav id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+          <div class="overlay-content">
+            <a href="about.html" onclick="closeNav()">About</a>
+            <a href="#program" onclick="closeNav()">Program</a>
+            <a href="#partners"  onclick="closeNav()">Partners</a>
+            <a href="#" onclick="closeNav()">News</a>
+            <a href="#" onclick="closeNav()">WS Events</a>
+          </div>
+        </nav>
+        
+        <div><img src="img/menu-svgrepo-com.svg" class="openbtn" onclick="openNav()" alt="nav-menu"></div>
+        
+      <!--main header-->
+      <section class="info">
+        <h2>"Hello! Sporting World"</h2>
+        <h1>Sport Business Seminar<br />2022</h1>
+        <div class="para">
+          <p>
+            The Seminar delivers insight, real-world career development and
+            industry opportunities in the sports marketplace.
+          </p>
+          <div class="date">2022.02.01(THU) ~ 02(FRI)</div>
+          <div class="place">@ M.S.G, Staples Center and More</div>
+        </div>
+      </section>
+    </header>
+    <!--program section-->
+    <section class="program" id="program">
+      <div class="pro-header">Main Program</div>
+      <hr color="#ec5242" width="5%" />
+      <div class="prog-boxes">
+        <div class="prog-box">
+          <img src="img/lecture-conference-svgrepo-com.svg" alt="Lecture" />
+          <h4>Lecture</h4>
+          <p>Hear the in's and out's of the industry from our guest speakers</p>
+        </div>
+        <div class="prog-box">
+          <img src="img/conference-hall-svgrepo-com.svg" alt="conference" />
+          <h4>Video Confernce</h4>
+          <p>Watch audio visuals on the lanscape of the industry now</p>
+        </div>
+        <div class="prog-box">
+          <img src="img/forum.svg" alt="forum" />
+          <h4>Forum</h4>
+          <p>Attend forums to find solution to the challenges the industry</p>
+        </div>
+        <div class="prog-box">
+          <img src="img/business-suitcase-svgrepo-com.svg" alt="suitcase" />
+          <h4>Business Lecture</h4>
+          <p>Partcipate lectures focused on the Numbers side of sports</p>
+        </div>
+        <div class="prog-box">
+          <img src="img/network-group-svgrepo-com.svg" alt="Network" />
+          <h4>Network</h4>
+          <p>Meet and greet with people on the industry</p>
+        </div>
+      </div>
+      <button class="join-mobile" type="submit">Join WS summit 2022</button>
+      <div class="desktop-see"><a href="#">See The Whole Program</a></div>
+    </section>
+    <!--speakers section-->
+    <section class="feature-section">
+      <article class="feature-wrapper">
+        <h3 class="main-program-title feature-title">Featured Speakers</h3>
+        <hr color="#ec5242" width="6%" />
+        <ul id="speakers" class="speaker-list">
+        </ul>
+      </article>
+    </section>
+    <!--sponcers section-->
+    <section class="sponcers" id="partners">
+      <div class="pro-header">Partners</div>
+      <hr color="#ec5242" width="4%" />
+        <div class="partners-logo">
+          <div></div>
+          <img class="partners-img" src="img/nba (1).png" alt="raptors">
+          <img class="partners-img" src="img/pngfind.com-real-madrid-png-708504.png" alt="real-madrid">
+          <img class="partners-img" src="img/pngfind.com-ea-sports-logo-png-910398.png" alt="ea sports">
+          <img class="partners-img" src="img/nba (2).png" alt="dallas mavs">
+          <img class="partners-img" src="img/dallas-cowboys.png" alt="dallas cowboys">
+        </div>
+    </section>
+    <!--footer section-->
+    <footer class="footer">
+      <img src="img/pngwing.com.png" alt="logo" />
+      <div>
+        <p>2022 WORLD SPORTS . Some Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
