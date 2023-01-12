@@ -144,7 +144,7 @@ header {
   cursor: pointer;
 }
 
-.prog-boxes :hover{
+.prog-boxes :hover {
   border: solid white;
   transition: 0.8s;
 }
@@ -182,12 +182,12 @@ header {
   margin-bottom: 50px;
 }
 
-
 /* footer section */
 .footer {
   display: none;
 }
-/*.footer {
+
+/* .footer {
   display: flex;
   justify-content: space-around;
   background-color: #d3d3d3;
@@ -201,7 +201,7 @@ header {
 
 .footer p {
   font-size: x-small;
-}*/
+} */
 
 /* speakers section */
 .feature-section {
@@ -287,7 +287,7 @@ header {
 }
 
 /* sponcers header */
-.sponcers{
+.sponcers {
   display: none;
   background-color: #272a31;
   width: 100%;
@@ -298,7 +298,8 @@ header {
   justify-content: center;
   padding: 10px 10px;
 }
-/*.sponcers {
+
+/* .sponcers {
   background-color: #272a31;
 }
 
@@ -312,7 +313,7 @@ header {
   height: 50px;
   width: 45px;
   padding: 10px 10px;
-}*/
+} */
 
 @media screen and (min-width: 768px) {
   header {
@@ -352,6 +353,10 @@ header {
   .white-bar img {
     height: 60px;
     width: 80px;
+  }
+
+  .desktop-see a {
+    color: white;
   }
 
   .white-bar a {
@@ -479,10 +484,6 @@ header {
     font-weight: 700;
     text-align: center;
     padding: 40px 10px;
-  }
-
-  .desktop-see a {
-    color: white;
   }
 
   .join-mobile {
