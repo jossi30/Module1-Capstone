@@ -185,6 +185,9 @@ header {
 
 /* footer section */
 .footer {
+  display: none;
+}
+/*.footer {
   display: flex;
   justify-content: space-around;
   background-color: #d3d3d3;
@@ -198,7 +201,7 @@ header {
 
 .footer p {
   font-size: x-small;
-}
+}*/
 
 /* speakers section */
 .feature-section {
@@ -284,7 +287,18 @@ header {
 }
 
 /* sponcers header */
-.sponcers {
+.sponcers{
+  display: none;
+  background-color: #272a31;
+  width: 100%;
+}
+
+.partners-logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+}
+/*.sponcers {
   background-color: #272a31;
 }
 
@@ -298,7 +312,7 @@ header {
   height: 50px;
   width: 45px;
   padding: 10px 10px;
-}
+}*/
 
 @media screen and (min-width: 768px) {
   header {
@@ -494,6 +508,9 @@ header {
   }
 
   /* sponcers section */
+  .sponcers {
+    display: block;
+  }
 
   .partners-img {
     height: 80px;
