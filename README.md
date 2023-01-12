@@ -53,7 +53,7 @@ A website for a Seminar.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://jossi30.github.io/Module1-Capstone/)
-- [Video walkthrough](https://www.loom.com/share/9f96bd4b5a904492a1d5d645fb52b97b)
+- [Video walkthrough](https://www.loom.com/share/5bc90ae14fca403abaf22fb101342c44)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
