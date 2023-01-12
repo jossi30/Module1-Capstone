@@ -525,11 +525,12 @@ header {
     display: flex;
     justify-content: space-evenly;
     padding-top: 10px;
+    font-size: x-small;
   }
 
   .footer img {
-    height: 100px;
-    width: 150px;
+    height: 80px;
+    width: 110px;
   }
 
   .footer p {

@@ -334,15 +334,15 @@ header {
   .footer {
     background-color: #272a32;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-top: 10px;
-    color: #d3d3d3;
+    font-size: x-small;
     width: 100%;
   }
 
   .footer img {
-    height: 100px;
-    width: 150px;
+    height: 80px;
+    width: 110px;
   }
 
   .footer p {
