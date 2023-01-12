@@ -117,6 +117,9 @@ header {
 .program {
   background-color: #272a32;
   padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pro-header {
@@ -132,11 +135,22 @@ header {
 
 .prog-box {
   width: fit-content;
-  border: solid white;
+  border: solid #272a31;
   display: flex;
   align-items: center;
   padding-left: 10px;
   margin-bottom: 10px;
+  background-color: #3d4149da;
+  cursor: pointer;
+}
+
+.prog-boxes :hover{
+  border: solid white;
+  transition: 0.8s;
+}
+
+.prog-box :hover {
+  border: none;
 }
 
 .prog-boxes img {
@@ -152,6 +166,22 @@ header {
   padding: 10px 10px;
   color: #f5f5f5;
 }
+
+.desktop-see {
+  display: none;
+}
+
+.join-mobile {
+  height: 50px;
+  width: 180px;
+  background-color: #ec5242;
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
 
 /* footer section */
 .footer {
@@ -412,7 +442,6 @@ header {
   .prog-box {
     display: flex;
     flex-direction: column;
-    border: solid white;
   }
 
   .prog-box img {
@@ -429,6 +458,21 @@ header {
     padding: 0 10px;
     width: 200px;
     text-align: center;
+  }
+
+  .desktop-see {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 10px;
+  }
+
+  .desktop-see a {
+    color: white;
+  }
+
+  .join-mobile {
+    display: none;
   }
 
   /* speakers section */
